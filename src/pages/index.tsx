@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React from 'react'
 import Home1 from '../components/Home'
+import * as S from "./styles"
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
         <link rel="icon" href="/pandemic.svg" />
       </Head>
       <main className={styles.main}>
-        <Home1/>
+        <S.container>
+          <Home1 />
+        </S.container>
       </main>
     </>
   )
