@@ -14,7 +14,7 @@ export const theme = {
         },
         tertiary: {
             lighterTertiary: '#fd9407',
-            lightTertiary: '',
+            lightTertiary: '#d09a50',
             mainTertiary: '',
             darkTertiary: '#bd6f06',
             darkerTertiary: ''
