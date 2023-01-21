@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+width: 100%;
+height: 100px;
+
 display: flex;
 flex-direction: row;
 
@@ -8,9 +11,6 @@ align-content: center;
 justify-content: space-evenly;
 background-color: #e2d9c2;
 
-margin-top: 748px;
-height: 100px;
-width: 100%;
 `
 export const ContainerSecundary = styled.div`
 display: flex;
@@ -33,6 +33,7 @@ export const ContainerText = styled.div`
 export const Text = styled.p`
 display: inline-block;
 text-aling:center;
+font-size:12px;
 margin:auto;
 color:#10898b;
 `

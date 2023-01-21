@@ -11,10 +11,10 @@ export default function Footer() {
                      e deferentes tipos de catastrofe, Salve-Se!</S.Text>
             </S.ContainerSecundary>
             <S.ContainerSecundary>
-                <S.Text>copyright @JUBILEU</S.Text>
+                <S.Text>copyright @Jubileu</S.Text>
             </S.ContainerSecundary>
             <S.ContainerSecundary>
-                <S.Text>Acesse as nossas redes sociais:</S.Text>
+                <S.Text>Acesse as nossas <br/> redes sociais:</S.Text>
                 <S.List>
                     <S.Li>
                         <S.ContainerSocial>

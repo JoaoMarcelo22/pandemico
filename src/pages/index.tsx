@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import React from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import Main from '../components/Main'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
           <Nav />
+          <Main/>
           <Footer/>
       </main>
     </>
