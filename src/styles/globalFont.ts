@@ -1,6 +1,10 @@
 import { css } from "styled-components";
 
-const Lobster = css`
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-`;
-export default Lobster;
+export const GlobalFont = css`
+    @font-face{
+        font-family: "Lobster";
+        font-weight: 400;
+        src: local("Lobster"), url("/fonts/Lobster/Lobster-Regular.ttf") format("truetype")
+    }
+
+`

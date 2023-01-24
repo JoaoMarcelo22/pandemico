@@ -16,7 +16,6 @@ export default function Nav() {
             </S.ContainerStart>
             <S.ContainerEnd>
                 <S.ContainerSearch>
-                    <S.Pesquisa />
                     <S.Search src="/assets/search.svg"></S.Search>
                 </S.ContainerSearch>
                 <S.LoginImg src="/assets/login.svg"></S.LoginImg>

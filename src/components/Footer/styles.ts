@@ -4,24 +4,25 @@ export const Container = styled.div`
 width: 100%;
 height: 100px;
 
+padding:20px;
+
 display: flex;
 flex-direction: row;
 
 align-content: center;
 justify-content: space-evenly;
-background-color: #e2d9c2;
+background-color: rgba(0, 0, 0, 0.329);
 
 `
 export const ContainerSecundary = styled.div`
 display: flex;
-margin: auto 10px;
+margin: auto;
 align-content: center;
 align-items: center;
 flex-basis: 33%;
 `
 export const ContainerSocial = styled.div`
 display: flex;
-margin-right:10px;
 
 `
 

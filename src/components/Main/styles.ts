@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerCenter = styled.div`
-width:100%;
-height:100%;
+width:auto;
+height:auto;
 
-background-color:black;
+padding:50px;
+
+background-color:rgba(0, 0, 0, 0.329);
 `
 export const ContainerSecundary = styled.div`
 width:250px;
@@ -18,23 +20,22 @@ border-radius:10px;
 background-color:red;
 `
 export const ContainerTerciary = styled.div`
-width:1050px;
+width:auto;
 height:auto;
 
 margin:auto;
-padding:16px;
+margin-top:5px;
 border-radius:5px;
 
 display:flex;
 
-background-color:grey;
+background-color:gray;
 
 `
 export const Text = styled.p`
 display: inline-block;
 margin:auto 10px;
 
-font-family: 'Lobster';
 color:white;
 
 text-aling:justify;
