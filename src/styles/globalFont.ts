@@ -1,10 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { css } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
-    @font-face{
-        font-family: "Lobster";
-        font-weight: 400;
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-    }
-
-`
+const Lobster = css`
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+`;
+export default Lobster;

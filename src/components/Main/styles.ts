@@ -34,6 +34,7 @@ export const Text = styled.p`
 display: inline-block;
 margin:auto 10px;
 
+font-family: 'Lobster';
 color:white;
 
 text-aling:justify;

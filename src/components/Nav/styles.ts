@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Lobster from "../../styles/globalFont";
 
 export const Container = styled.div`
 display: flex;
@@ -27,6 +28,7 @@ margin:auto 5px auto auto;
 `
 
 export const Titulo =styled.p`
+${Lobster}
 text-aling:center;
 color:#10898b;
 font-size: 45px;
