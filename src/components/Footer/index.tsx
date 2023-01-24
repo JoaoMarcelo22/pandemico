@@ -19,15 +19,15 @@ export default function Footer() {
                     <S.Li>
                         <S.ContainerSocial>
                             <S.Text>Twitter</S.Text>
-                            <S.Icone src="../twitter.svg" />
+                            <S.Icone src="assets/twitter.svg" />
                         </S.ContainerSocial>
                         <S.ContainerSocial>
                             <S.Text>Instagram</S.Text>
-                            <S.Icone src="../instagram.svg" />
+                            <S.Icone src="assets/instagram.svg" />
                         </S.ContainerSocial>
                         <S.ContainerSocial>
                             <S.Text>facebook</S.Text>
-                            <S.Icone src="../facebook.svg" />
+                            <S.Icone src="assets/facebook.svg" />
                         </S.ContainerSocial>
                     </S.Li>
                 </S.List>

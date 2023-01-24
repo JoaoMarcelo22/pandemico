@@ -6,7 +6,7 @@ export default function Main() {
             <S.ContainerCenter>
                 <S.ContainerTerciary>
                     <S.ContainerSecundary>
-                        <S.Img src="../vagalume.jpg"></S.Img>
+                        <S.Img src="/assets/vagalume.jpg"></S.Img>
                     </S.ContainerSecundary>
                     <S.Text>
                         No início, os Vagalumes não apenas queriam acabar com o domínio violento da FEDRA e retornar a uma forma mais democrática de governo, mas também eram um grupo primário em busca de uma cura.<br/>
@@ -20,7 +20,7 @@ export default function Main() {
                 </S.ContainerTerciary>
                 <S.ContainerTerciary>
                     <S.ContainerSecundary>
-                        <S.Img src="../vagalume.jpg"></S.Img>
+                        <S.Img src="assets/vagalume.jpg"></S.Img>
                     </S.ContainerSecundary>
                     <S.Text>
                         No início, os Vagalumes não apenas queriam acabar com o domínio violento da FEDRA e retornar a uma forma mais democrática de governo, mas também eram um grupo primário em busca de uma cura.<br/>
