@@ -8,6 +8,13 @@ display: flex;
 justify-content: space-between;
 
 background-color: rgba(0, 0, 0, 0.329);
+@media only screen and (max-width: 1000px) {
+    display:flex;
+    flex-direction:column;
+
+    padding-top:5px;
+    border-top:2px solid rgb(14,198,201,0.2);
+}
 
 `
 export const ContainerSecundary = styled.div`
@@ -42,6 +49,9 @@ color:#10898b;
 export const List = styled.ul`
 margin:auto 12px;
 padding:0px 0px 20px 0px;
+@media only screen and (max-width: 1000px) {
+    display:flex;
+}
 `
 export const Li = styled.li`
 margin: auto;

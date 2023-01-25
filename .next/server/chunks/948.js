@@ -21,7 +21,9 @@ var external_styled_components_ = __webpack_require__(7518);
 var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
 ;// CONCATENATED MODULE: ./src/components/Footer/styles.ts
 
-const Container = (external_styled_components_default()).div`
+const Container = external_styled_components_default().div.withConfig({
+    componentId: "sc-37d3758b-0"
+})`
 width: auto;
 height: 100px;
 
@@ -29,9 +31,18 @@ display: flex;
 justify-content: space-between;
 
 background-color: rgba(0, 0, 0, 0.329);
+@media only screen and (max-width: 1000px) {
+    display:flex;
+    flex-direction:column;
+
+    padding-top:5px;
+    border-top:2px solid rgb(14,198,201,0.2);
+}
 
 `;
-const ContainerSecundary = (external_styled_components_default()).div`
+const ContainerSecundary = external_styled_components_default().div.withConfig({
+    componentId: "sc-37d3758b-1"
+})`
 display: flex;
 align-content: center;
 align-items: center;
@@ -41,14 +52,20 @@ align-items: center;
 }
 
 `;
-const ContainerSocial = (external_styled_components_default()).div`
+const ContainerSocial = external_styled_components_default().div.withConfig({
+    componentId: "sc-37d3758b-2"
+})`
 display: flex;
 
 `;
-const ContainerText = (external_styled_components_default()).div`
+const ContainerText = external_styled_components_default().div.withConfig({
+    componentId: "sc-37d3758b-3"
+})`
 display:flex;
 `;
-const Text = (external_styled_components_default()).p`
+const Text = external_styled_components_default().p.withConfig({
+    componentId: "sc-37d3758b-4"
+})`
 display: inline-block;
 text-aling:center;
 
@@ -60,23 +77,34 @@ line-height:1.6;
 
 color:#10898b;
 `;
-const List = (external_styled_components_default()).ul`
+const List = external_styled_components_default().ul.withConfig({
+    componentId: "sc-37d3758b-5"
+})`
 margin:auto 12px;
 padding:0px 0px 20px 0px;
+@media only screen and (max-width: 1000px) {
+    display:flex;
+}
 `;
-const Li = (external_styled_components_default()).li`
+const Li = external_styled_components_default().li.withConfig({
+    componentId: "sc-37d3758b-6"
+})`
 margin: auto;
 margin-left:15px;
 list-style-type: none;
 `;
-const Icone = (external_styled_components_default()).img`
+const Icone = external_styled_components_default().img.withConfig({
+    componentId: "sc-37d3758b-7"
+})`
 widht:30px;
 height:30px;
 
 margin-left:10px;
 padding-top:6px; 
 `;
-const RedeSocial = (external_styled_components_default()).a`
+const RedeSocial = external_styled_components_default().a.withConfig({
+    componentId: "sc-37d3758b-8"
+})`
 `;
 
 ;// CONCATENATED MODULE: ./src/components/Footer/index.tsx
@@ -181,7 +209,9 @@ var external_styled_components_ = __webpack_require__(7518);
 var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
 ;// CONCATENATED MODULE: ./src/components/ButtonNav/styles.ts
 
-const Container = (external_styled_components_default()).div`
+const Container = external_styled_components_default().div.withConfig({
+    componentId: "sc-bd4bd590-0"
+})`
 display: flex;
 flex-direction: row;
 
@@ -189,7 +219,9 @@ margin: auto 2px;
 padding: 1px;
 
 `;
-const Titulo = (external_styled_components_default()).a`
+const Titulo = external_styled_components_default().a.withConfig({
+    componentId: "sc-bd4bd590-1"
+})`
 min-width: 99px;
 height: 50px;
 
@@ -252,7 +284,9 @@ const GlobalFont = external_styled_components_.css`
 ;// CONCATENATED MODULE: ./src/components/Nav/styles.ts
 
 
-const styles_Container = (external_styled_components_default()).div`
+const styles_Container = external_styled_components_default().div.withConfig({
+    componentId: "sc-eedcd5fb-0"
+})`
 width: 100%;
 height: 100px;
 
@@ -262,25 +296,33 @@ justify-content: space-evenly;
 
 background-color: rgba(0, 0, 0, 0.329);
 `;
-const ContainerSearch = (external_styled_components_default()).div`
+const ContainerSearch = external_styled_components_default().div.withConfig({
+    componentId: "sc-eedcd5fb-1"
+})`
 display: flex;
 aling-items: center;
 
 padding: 20px;
 `;
-const ContainerStart = (external_styled_components_default()).div`
+const ContainerStart = external_styled_components_default().div.withConfig({
+    componentId: "sc-eedcd5fb-2"
+})`
 display: flex;
 aling-items: center;
 
 margin:auto 5px auto 20px;
 `;
-const ContainerEnd = (external_styled_components_default()).div`
+const ContainerEnd = external_styled_components_default().div.withConfig({
+    componentId: "sc-eedcd5fb-3"
+})`
 display: flex;
 aling-items: center;
 
 margin:auto 5px auto auto;
 `;
-const styles_Titulo = (external_styled_components_default()).p`
+const styles_Titulo = external_styled_components_default().p.withConfig({
+    componentId: "sc-eedcd5fb-4"
+})`
 ${GlobalFont}
 min-width: 20px;
 
@@ -292,12 +334,16 @@ color:#10898b;
 font-size: 45px;
 font-family: "Lobster";
 `;
-const Search = (external_styled_components_default()).img`
+const Search = external_styled_components_default().img.withConfig({
+    componentId: "sc-eedcd5fb-5"
+})`
 height: 38px;
 
 margin: auto 5px;
 `;
-const LoginImg = (external_styled_components_default()).img`
+const LoginImg = external_styled_components_default().img.withConfig({
+    componentId: "sc-eedcd5fb-6"
+})`
 height: 40px;
 
 margin: auto;
