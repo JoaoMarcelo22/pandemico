@@ -23,17 +23,17 @@ export const ContainerTerciary = styled.div`
 width:auto;
 height:auto;
 
+display:flex;
+
 margin:auto;
 margin-top:5px;
 border-radius:5px;
 
-display:flex;
-
 background-color:gray;
-
 `
 export const Text = styled.p`
 display: inline-block;
+
 margin:auto 10px;
 
 color:white;

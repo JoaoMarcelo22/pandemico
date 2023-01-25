@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import Button from "../Button"
+import Button from "../ButtonNav"
 import * as S from "./styles"
 
 export default function Nav() {
@@ -16,9 +16,9 @@ export default function Nav() {
             </S.ContainerStart>
             <S.ContainerEnd>
                 <S.ContainerSearch>
-                    <S.Search src="/assets/search.svg"></S.Search>
+                    <S.Search src="/assets/lupa.png"></S.Search>
                 </S.ContainerSearch>
-                <S.LoginImg src="/assets/login.svg"></S.LoginImg>
+                <S.LoginImg src="/assets/login2.png"></S.LoginImg>
             </S.ContainerEnd>
         </S.Container>
     )

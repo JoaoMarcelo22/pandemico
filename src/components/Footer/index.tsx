@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../Button"
+import Button from "../ButtonNav"
 import * as S from "./styles"
 
 export default function Footer() {
@@ -7,30 +7,36 @@ export default function Footer() {
         <S.Container>
             <S.ContainerSecundary>
                 <S.Text>Pagina para apaixonados e amantes da cultura Zumbi,
-                     temos conteudos que abramgem diversos temas, virus, bacterias 
-                     e deferentes tipos de catastrofe, Salve-Se!</S.Text>
+                    temos conteudos que abramgem diversos temas, virus, bacterias
+                    e deferentes tipos de catastrofe, Salve-Se!<br /><br />
+                    © Copyright Todos os direitos reservados a Jubileu 2023</S.Text>
             </S.ContainerSecundary>
             <S.ContainerSecundary>
-                <S.Text>copyright @Jubileu</S.Text>
-            </S.ContainerSecundary>
-            <S.ContainerSecundary>
-                <S.Text>Acesse as nossas <br/> redes sociais:</S.Text>
-                <S.List>
-                    <S.Li>
-                        <S.ContainerSocial>
-                            <S.Text>Twitter</S.Text>
-                            <S.Icone src="assets/twitter.svg" />
-                        </S.ContainerSocial>
-                        <S.ContainerSocial>
-                            <S.Text>Instagram</S.Text>
-                            <S.Icone src="assets/instagram.svg" />
-                        </S.ContainerSocial>
-                        <S.ContainerSocial>
-                            <S.Text>facebook</S.Text>
-                            <S.Icone src="assets/facebook.svg" />
-                        </S.ContainerSocial>
-                    </S.Li>
-                </S.List>
+                <S.ContainerText>
+                    <S.Text>Acesse as nossas redes sociais:</S.Text>
+                    <S.List>
+                        <S.Li>
+                                <S.RedeSocial href="https://twitter.com/" target="_blank">
+                            <S.ContainerSocial>
+                                    <S.Text>Twitter</S.Text>
+                                    <S.Icone src="assets/twitter.svg" />
+                            </S.ContainerSocial>
+                                </S.RedeSocial>
+                                <S.RedeSocial href="https://www.instagram.com/" target="_blank">
+                            <S.ContainerSocial>
+                                    <S.Text>Instagram</S.Text>
+                                    <S.Icone src="assets/instagram.svg" />
+                            </S.ContainerSocial>
+                                </S.RedeSocial>
+                                <S.RedeSocial href="https://pt-br.facebook.com/" target="_blank">
+                            <S.ContainerSocial>
+                                    <S.Text>facebook</S.Text>
+                                    <S.Icone src="assets/facebook.svg" />
+                            </S.ContainerSocial>
+                                </S.RedeSocial>
+                        </S.Li>
+                    </S.List>
+                </S.ContainerText>
             </S.ContainerSecundary>
         </S.Container>
     )
