@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-width: 100%;
+width: auto;
 height: 100px;
 
 display: flex;
@@ -15,7 +15,10 @@ display: flex;
 align-content: center;
 align-items: center;
 
-margin: auto;
+@media only screen and (min-width: 1000px) {
+    margin: auto 20px;
+}
+
 `
 export const ContainerSocial = styled.div`
 display: flex;

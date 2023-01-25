@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/Footer/styles.ts
 
 const Container = (external_styled_components_default()).div`
-width: 100%;
+width: auto;
 height: 100px;
 
 display: flex;
@@ -36,7 +36,10 @@ display: flex;
 align-content: center;
 align-items: center;
 
-margin: auto;
+@media only screen and (min-width: 1000px) {
+    margin: auto 20px;
+}
+
 `;
 const ContainerSocial = (external_styled_components_default()).div`
 display: flex;
@@ -207,13 +210,13 @@ background-color:rgb(14,198,201,0.1);
 cursor: pointer;
 text-decoration: none;
 
-border-radius: 5px;
+border-radius: 8px;
 border: solid 2px #10898b;
 
 
 
 :hover{
-    color:white;
+    color:rgb(265,265,265,0.8);
     background-color:rgb(14,198,201,0.7);
     
     border:none;

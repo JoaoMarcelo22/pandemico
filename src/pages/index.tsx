@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Main from '../components/Main'
+import Main from '../components/MainInicio'
 
 export default function Home() {
   return (

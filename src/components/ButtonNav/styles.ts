@@ -29,13 +29,13 @@ background-color:rgb(14,198,201,0.1);
 cursor: pointer;
 text-decoration: none;
 
-border-radius: 5px;
+border-radius: 8px;
 border: solid 2px #10898b;
 
 
 
 :hover{
-    color:white;
+    color:rgb(265,265,265,0.8);
     background-color:rgb(14,198,201,0.7);
     
     border:none;
