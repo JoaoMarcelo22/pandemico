@@ -1,9 +1,9 @@
 import Footer from "../../components/Footer";
-import Nav from "../../components/Nav";
+import Nav2 from "../../components/Nav2";
 
 export default function More(){
     return(<>
-        <Nav/>
+        <Nav2/>
         <Footer/>
         </>
     )

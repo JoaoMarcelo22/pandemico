@@ -11,7 +11,7 @@ const Button: React.FC<ButtonComponentProps>=({
 }) => {
     return(
         <S.Container>
-            <S.Titulo href="#" target="_blank">{label}</S.Titulo>
+            <S.Titulo href="#">{label}</S.Titulo>
         </S.Container>
     );
 };
