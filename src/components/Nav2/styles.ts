@@ -10,6 +10,11 @@ align-content: center;
 justify-content: space-evenly;
 
 background-color: rgba(0, 0, 0, 0.329);
+
+#nested-list-subheader{
+    font-size:18px;
+    margin:auto;
+}
 `
 
 export const ContainerStart = styled.div`
@@ -24,6 +29,10 @@ display: flex;
 aling-items: center;
 
 margin:auto 5px auto auto;
+
+@media only screen and (max-width: 1000px) {
+    margin-top: 24px;
+}
 `
 
 export const Titulo =styled.p`
@@ -37,10 +46,19 @@ margin: auto 20px auto auto;
 color:#10898b;
 font-size: 45px;
 font-family: "Lobster";
+
+@media only screen and (max-width: 1000px) {
+    margin: 0px;
+}
 `
 export const LoginImg = styled.img`
 height: 40px;
 
 margin: auto 35px auto -10px;;
 margin-right: 35px;
+
+@media only screen and (max-width: 1000px) {
+    margin: 10px;
+}
+
 `
