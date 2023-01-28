@@ -8,7 +8,7 @@
 <li><strong>Styled Component</strong> </li>
 <li><strong>Material UI</strong> </li>
 <li><strong>Vercel</strong></li>
-<ul/>
+</ul>
 
 <h2>Objetivos:</h2>
 <ul>
