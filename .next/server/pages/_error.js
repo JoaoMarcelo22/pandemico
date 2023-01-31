@@ -1,318 +1,65 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 820;
-exports.ids = [820];
+exports.id = "pages/_error";
+exports.ids = ["pages/_error"];
 exports.modules = {
 
-/***/ 7345:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ "./src/pages/_error.js":
+/*!*****************************!*\
+  !*** ./src/pages/_error.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-exports["default"] = void 0;
-var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
-var _react = _interop_require_default(__webpack_require__(6689));
-var _head = _interop_require_default(__webpack_require__(3121));
-const statusCodes = {
-    400: "Bad Request",
-    404: "This page could not be found",
-    405: "Method Not Allowed",
-    500: "Internal Server Error"
-};
-function _getInitialProps({ res , err  }) {
-    const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
-    return {
-        statusCode
-    };
-}
-const styles = {
-    error: {
-        fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
-        height: "100vh",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center"
-    },
-    desc: {
-        display: "inline-block",
-        textAlign: "left",
-        lineHeight: "49px",
-        height: "49px",
-        verticalAlign: "middle"
-    },
-    h1: {
-        display: "inline-block",
-        margin: 0,
-        marginRight: "20px",
-        padding: "0 23px 0 0",
-        fontSize: "24px",
-        fontWeight: 500,
-        verticalAlign: "top",
-        lineHeight: "49px"
-    },
-    h2: {
-        fontSize: "14px",
-        fontWeight: "normal",
-        lineHeight: "49px",
-        margin: 0,
-        padding: 0
-    }
-};
-var _Component;
-class Error extends (_Component = _react.default.Component) {
-    render() {
-        const { statusCode , withDarkMode =true  } = this.props;
-        const title = this.props.title || statusCodes[statusCode] || "An unexpected error has occurred";
-        return /*#__PURE__*/ _react.default.createElement("div", {
-            style: styles.error
-        }, /*#__PURE__*/ _react.default.createElement(_head.default, null, /*#__PURE__*/ _react.default.createElement("title", null, statusCode ? `${statusCode}: ${title}` : "Application error: a client-side exception has occurred")), /*#__PURE__*/ _react.default.createElement("div", null, /*#__PURE__*/ _react.default.createElement("style", {
-            dangerouslySetInnerHTML: {
-                __html: `
-                body { margin: 0; color: #000; background: #fff; }
-                .next-error-h1 {
-                  border-right: 1px solid rgba(0, 0, 0, .3);
-                }
-
-                ${withDarkMode ? `@media (prefers-color-scheme: dark) {
-                  body { color: #fff; background: #000; }
-                  .next-error-h1 {
-                    border-right: 1px solid rgba(255, 255, 255, .3);
-                  }
-                }` : ""}`
-            }
-        }), statusCode ? /*#__PURE__*/ _react.default.createElement("h1", {
-            className: "next-error-h1",
-            style: styles.h1
-        }, statusCode) : null, /*#__PURE__*/ _react.default.createElement("div", {
-            style: styles.desc
-        }, /*#__PURE__*/ _react.default.createElement("h2", {
-            style: styles.h2
-        }, this.props.title || statusCode ? title : /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, "Application error: a client-side exception has occurred (see the browser console for more information)"), "."))));
-    }
-}
-Error.displayName = "ErrorPage";
-Error.getInitialProps = _getInitialProps;
-Error.origGetInitialProps = _getInitialProps;
-exports["default"] = Error;
-if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
-    Object.defineProperty(exports.default, "__esModule", {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=_error.js.map
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ pageComponent),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @sentry/nextjs */ \"@sentry/nextjs\");\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/error */ \"next/error\");\n/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nconst CustomErrorComponent = (props)=>{\n    // If you're using a Nextjs version prior to 12.2.1, uncomment this to\n    // compensate for https://github.com/vercel/next.js/issues/8592\n    // Sentry.captureUnderscoreErrorException(props);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_error__WEBPACK_IMPORTED_MODULE_2___default()), {\n        statusCode: props.statusCode\n    }, void 0, false, {\n        fileName: \"/home/jubileu/Documentos/pandemico/src/pages/_error.js\",\n        lineNumber: 27,\n        columnNumber: 10\n    }, undefined);\n};\nCustomErrorComponent.getInitialProps = async (contextData)=>{\n    // In case this is running in a serverless function, await this in order to give Sentry\n    // time to send the error before the lambda exits\n    await _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.captureUnderscoreErrorException(contextData);\n    // This will contain the status code of the response\n    return next_error__WEBPACK_IMPORTED_MODULE_2___default().getInitialProps(contextData);\n};\n\nvar origModule = /*#__PURE__*/Object.freeze({\n    __proto__: null,\n    'default': CustomErrorComponent\n});\n\n/*\n * This file is a template for the code which will be substituted when our webpack loader handles non-API files in the\n * `pages/` directory.\n *\n * We use `__SENTRY_WRAPPING_TARGET_FILE__.cjs` as a placeholder for the path to the file being wrapped. Because it's not a real package,\n * this causes both TS and ESLint to complain, hence the pragma comments below.\n */\n\nconst userPageModule = origModule ;\n\nconst pageComponent = userPageModule.default;\n\nconst origGetInitialProps = pageComponent.getInitialProps;\nconst origGetStaticProps = userPageModule.getStaticProps;\nconst origGetServerSideProps = userPageModule.getServerSideProps;\n\nconst getInitialPropsWrappers = {\n  '/_app': _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapAppGetInitialPropsWithSentry,\n  '/_document': _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapDocumentGetInitialPropsWithSentry,\n  '/_error': _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapErrorGetInitialPropsWithSentry,\n};\n\nconst getInitialPropsWrapper = getInitialPropsWrappers['/_error'] || _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapGetInitialPropsWithSentry;\n\nif (typeof origGetInitialProps === 'function') {\n  pageComponent.getInitialProps = getInitialPropsWrapper(origGetInitialProps) ;\n}\n\nconst getStaticProps =\n  typeof origGetStaticProps === 'function'\n    ? _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapGetStaticPropsWithSentry(origGetStaticProps, '/_error')\n    : undefined;\nconst getServerSideProps =\n  typeof origGetServerSideProps === 'function'\n    ? _sentry_nextjs__WEBPACK_IMPORTED_MODULE_1__.wrapGetServerSidePropsWithSentry(origGetServerSideProps, '/_error')\n    : undefined;\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2Vycm9yLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFxQkEsTUFBTUEsb0JBQUFBLEdBQXVCQyxDQUFBQSxLQUFTOzs7O0FBS3BDLHlCQUFPQyw2REFBQ0MsQ0FBQUEsbURBQUFBLEVBQUFBO0FBQW1CQyxRQUFBQSxVQUFBQSxFQUFZSCxNQUFNRyxVQUFVOzs7Ozs7QUFDekQ7QUFFQUosb0JBQXFCSyxDQUFBQSxlQUFlLEdBQUcsT0FBTUMsV0FBZTs7O0lBRzFELE1BQU1DLDJFQUFzQyxDQUFDRCxXQUFBQSxDQUFBQSxDQUFBQTs7SUFHN0MsT0FBT0gsaUVBQWtDLENBQUNHLFdBQUFBLENBQUFBLENBQUFBO0FBQzVDOzs7Ozs7O0FDaENBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxNQUFNLGNBQWMsR0FBRyxVQUFVLEVBQUU7QUFDbkM7QUFDSyxNQUFDLGFBQWEsR0FBRyxjQUFjLENBQUMsUUFBUTtBQUM3QztBQUNBLE1BQU0sbUJBQW1CLEdBQUcsYUFBYSxDQUFDLGVBQWUsQ0FBQztBQUMxRCxNQUFNLGtCQUFrQixHQUFHLGNBQWMsQ0FBQyxjQUFjLENBQUM7QUFDekQsTUFBTSxzQkFBc0IsR0FBRyxjQUFjLENBQUMsa0JBQWtCLENBQUM7QUFDakU7QUFDQSxNQUFNLHVCQUF1QixHQUFHO0FBQ2hDLEVBQUUsT0FBTyxFQUFFLDRFQUF1QztBQUNsRCxFQUFFLFlBQVksRUFBRSxpRkFBNEM7QUFDNUQsRUFBRSxTQUFTLEVBQUUsOEVBQXlDO0FBQ3RELENBQUMsQ0FBQztBQUNGO0FBQ0EsTUFBTSxzQkFBc0IsR0FBRyx1QkFBdUIsQ0FBQyxTQUFTLENBQUMsSUFBSSx5RUFBb0MsQ0FBQztBQUMxRztBQUNBLElBQUksT0FBTyxtQkFBbUIsS0FBSyxVQUFVLEVBQUU7QUFDL0MsRUFBRSxhQUFhLENBQUMsZUFBZSxHQUFHLHNCQUFzQixDQUFDLG1CQUFtQixDQUFDLEVBQUU7QUFDL0UsQ0FBQztBQUNEO0FBQ0ssTUFBQyxjQUFjO0FBQ3BCLEVBQUUsT0FBTyxrQkFBa0IsS0FBSyxVQUFVO0FBQzFDLE1BQU0sd0VBQW1DLENBQUMsa0JBQWtCLEVBQUUsU0FBUyxDQUFDO0FBQ3hFLE1BQU0sVUFBVTtBQUNYLE1BQUMsa0JBQWtCO0FBQ3hCLEVBQUUsT0FBTyxzQkFBc0IsS0FBSyxVQUFVO0FBQzlDLE1BQU0sNEVBQXVDLENBQUMsc0JBQXNCLEVBQUUsU0FBUyxDQUFDO0FBQ2hGLE1BQU0iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wYW5kZW1pY28vc3JjL3BhZ2VzL19lcnJvci5qcz9lOTAxIiwid2VicGFjazovL3BhbmRlbWljby9zZW50cnktd3JhcHBlci1tb2R1bGU/NmY5NiJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIE5PVEU6IFRoaXMgcmVxdWlyZXMgYEBzZW50cnkvbmV4dGpzYCB2ZXJzaW9uIDcuMy4wIG9yIGhpZ2hlci5cbiAqXG4gKiBOT1RFOiBJZiB1c2luZyB0aGlzIHdpdGggYG5leHRgIHZlcnNpb24gMTIuMi4wIG9yIGxvd2VyLCB1bmNvbW1lbnQgdGhlXG4gKiBwZW51bHRpbWF0ZSBsaW5lIGluIGBDdXN0b21FcnJvckNvbXBvbmVudGAuXG4gKlxuICogVGhpcyBwYWdlIGlzIGxvYWRlZCBieSBOZXh0anM6XG4gKiAgLSBvbiB0aGUgc2VydmVyLCB3aGVuIGRhdGEtZmV0Y2hpbmcgbWV0aG9kcyB0aHJvdyBvciByZWplY3RcbiAqICAtIG9uIHRoZSBjbGllbnQsIHdoZW4gYGdldEluaXRpYWxQcm9wc2AgdGhyb3dzIG9yIHJlamVjdHNcbiAqICAtIG9uIHRoZSBjbGllbnQsIHdoZW4gYSBSZWFjdCBsaWZlY3ljbGUgbWV0aG9kIHRocm93cyBvciByZWplY3RzLCBhbmQgaXQnc1xuICogICAgY2F1Z2h0IGJ5IHRoZSBidWlsdC1pbiBOZXh0anMgZXJyb3IgYm91bmRhcnlcbiAqXG4gKiBTZWU6XG4gKiAgLSBodHRwczovL25leHRqcy5vcmcvZG9jcy9iYXNpYy1mZWF0dXJlcy9kYXRhLWZldGNoaW5nL292ZXJ2aWV3XG4gKiAgLSBodHRwczovL25leHRqcy5vcmcvZG9jcy9hcGktcmVmZXJlbmNlL2RhdGEtZmV0Y2hpbmcvZ2V0LWluaXRpYWwtcHJvcHNcbiAqICAtIGh0dHBzOi8vcmVhY3Rqcy5vcmcvZG9jcy9lcnJvci1ib3VuZGFyaWVzLmh0bWxcbiAqL1xuXG5pbXBvcnQgKiBhcyBTZW50cnkgZnJvbSAnQHNlbnRyeS9uZXh0anMnO1xuaW1wb3J0IE5leHRFcnJvckNvbXBvbmVudCBmcm9tICduZXh0L2Vycm9yJztcblxuY29uc3QgQ3VzdG9tRXJyb3JDb21wb25lbnQgPSBwcm9wcyA9PiB7XG4gIC8vIElmIHlvdSdyZSB1c2luZyBhIE5leHRqcyB2ZXJzaW9uIHByaW9yIHRvIDEyLjIuMSwgdW5jb21tZW50IHRoaXMgdG9cbiAgLy8gY29tcGVuc2F0ZSBmb3IgaHR0cHM6Ly9naXRodWIuY29tL3ZlcmNlbC9uZXh0LmpzL2lzc3Vlcy84NTkyXG4gIC8vIFNlbnRyeS5jYXB0dXJlVW5kZXJzY29yZUVycm9yRXhjZXB0aW9uKHByb3BzKTtcblxuICByZXR1cm4gPE5leHRFcnJvckNvbXBvbmVudCBzdGF0dXNDb2RlPXtwcm9wcy5zdGF0dXNDb2RlfSAvPjtcbn07XG5cbkN1c3RvbUVycm9yQ29tcG9uZW50LmdldEluaXRpYWxQcm9wcyA9IGFzeW5jIGNvbnRleHREYXRhID0+IHtcbiAgLy8gSW4gY2FzZSB0aGlzIGlzIHJ1bm5pbmcgaW4gYSBzZXJ2ZXJsZXNzIGZ1bmN0aW9uLCBhd2FpdCB0aGlzIGluIG9yZGVyIHRvIGdpdmUgU2VudHJ5XG4gIC8vIHRpbWUgdG8gc2VuZCB0aGUgZXJyb3IgYmVmb3JlIHRoZSBsYW1iZGEgZXhpdHNcbiAgYXdhaXQgU2VudHJ5LmNhcHR1cmVVbmRlcnNjb3JlRXJyb3JFeGNlcHRpb24oY29udGV4dERhdGEpO1xuXG4gIC8vIFRoaXMgd2lsbCBjb250YWluIHRoZSBzdGF0dXMgY29kZSBvZiB0aGUgcmVzcG9uc2VcbiAgcmV0dXJuIE5leHRFcnJvckNvbXBvbmVudC5nZXRJbml0aWFsUHJvcHMoY29udGV4dERhdGEpO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgQ3VzdG9tRXJyb3JDb21wb25lbnQ7XG4iLCJpbXBvcnQgKiBhcyBvcmlnTW9kdWxlIGZyb20gJ19fU0VOVFJZX1dSQVBQSU5HX1RBUkdFVF9GSUxFX18uY2pzJztcbmV4cG9ydCAqIGZyb20gJ19fU0VOVFJZX1dSQVBQSU5HX1RBUkdFVF9GSUxFX18uY2pzJztcbmltcG9ydCAqIGFzIFNlbnRyeSBmcm9tICdAc2VudHJ5L25leHRqcyc7XG5cbi8qXG4gKiBUaGlzIGZpbGUgaXMgYSB0ZW1wbGF0ZSBmb3IgdGhlIGNvZGUgd2hpY2ggd2lsbCBiZSBzdWJzdGl0dXRlZCB3aGVuIG91ciB3ZWJwYWNrIGxvYWRlciBoYW5kbGVzIG5vbi1BUEkgZmlsZXMgaW4gdGhlXG4gKiBgcGFnZXMvYCBkaXJlY3RvcnkuXG4gKlxuICogV2UgdXNlIGBfX1NFTlRSWV9XUkFQUElOR19UQVJHRVRfRklMRV9fLmNqc2AgYXMgYSBwbGFjZWhvbGRlciBmb3IgdGhlIHBhdGggdG8gdGhlIGZpbGUgYmVpbmcgd3JhcHBlZC4gQmVjYXVzZSBpdCdzIG5vdCBhIHJlYWwgcGFja2FnZSxcbiAqIHRoaXMgY2F1c2VzIGJvdGggVFMgYW5kIEVTTGludCB0byBjb21wbGFpbiwgaGVuY2UgdGhlIHByYWdtYSBjb21tZW50cyBiZWxvdy5cbiAqL1xuXG5jb25zdCB1c2VyUGFnZU1vZHVsZSA9IG9yaWdNb2R1bGUgO1xuXG5jb25zdCBwYWdlQ29tcG9uZW50ID0gdXNlclBhZ2VNb2R1bGUuZGVmYXVsdDtcblxuY29uc3Qgb3JpZ0dldEluaXRpYWxQcm9wcyA9IHBhZ2VDb21wb25lbnQuZ2V0SW5pdGlhbFByb3BzO1xuY29uc3Qgb3JpZ0dldFN0YXRpY1Byb3BzID0gdXNlclBhZ2VNb2R1bGUuZ2V0U3RhdGljUHJvcHM7XG5jb25zdCBvcmlnR2V0U2VydmVyU2lkZVByb3BzID0gdXNlclBhZ2VNb2R1bGUuZ2V0U2VydmVyU2lkZVByb3BzO1xuXG5jb25zdCBnZXRJbml0aWFsUHJvcHNXcmFwcGVycyA9IHtcbiAgJy9fYXBwJzogU2VudHJ5LndyYXBBcHBHZXRJbml0aWFsUHJvcHNXaXRoU2VudHJ5LFxuICAnL19kb2N1bWVudCc6IFNlbnRyeS53cmFwRG9jdW1lbnRHZXRJbml0aWFsUHJvcHNXaXRoU2VudHJ5LFxuICAnL19lcnJvcic6IFNlbnRyeS53cmFwRXJyb3JHZXRJbml0aWFsUHJvcHNXaXRoU2VudHJ5LFxufTtcblxuY29uc3QgZ2V0SW5pdGlhbFByb3BzV3JhcHBlciA9IGdldEluaXRpYWxQcm9wc1dyYXBwZXJzWycvX2Vycm9yJ10gfHwgU2VudHJ5LndyYXBHZXRJbml0aWFsUHJvcHNXaXRoU2VudHJ5O1xuXG5pZiAodHlwZW9mIG9yaWdHZXRJbml0aWFsUHJvcHMgPT09ICdmdW5jdGlvbicpIHtcbiAgcGFnZUNvbXBvbmVudC5nZXRJbml0aWFsUHJvcHMgPSBnZXRJbml0aWFsUHJvcHNXcmFwcGVyKG9yaWdHZXRJbml0aWFsUHJvcHMpIDtcbn1cblxuY29uc3QgZ2V0U3RhdGljUHJvcHMgPVxuICB0eXBlb2Ygb3JpZ0dldFN0YXRpY1Byb3BzID09PSAnZnVuY3Rpb24nXG4gICAgPyBTZW50cnkud3JhcEdldFN0YXRpY1Byb3BzV2l0aFNlbnRyeShvcmlnR2V0U3RhdGljUHJvcHMsICcvX2Vycm9yJylcbiAgICA6IHVuZGVmaW5lZDtcbmNvbnN0IGdldFNlcnZlclNpZGVQcm9wcyA9XG4gIHR5cGVvZiBvcmlnR2V0U2VydmVyU2lkZVByb3BzID09PSAnZnVuY3Rpb24nXG4gICAgPyBTZW50cnkud3JhcEdldFNlcnZlclNpZGVQcm9wc1dpdGhTZW50cnkob3JpZ0dldFNlcnZlclNpZGVQcm9wcywgJy9fZXJyb3InKVxuICAgIDogdW5kZWZpbmVkO1xuXG5leHBvcnQgeyBwYWdlQ29tcG9uZW50IGFzIGRlZmF1bHQsIGdldFNlcnZlclNpZGVQcm9wcywgZ2V0U3RhdGljUHJvcHMgfTtcbiJdLCJuYW1lcyI6WyJDdXN0b21FcnJvckNvbXBvbmVudCIsInByb3BzIiwiX2pzeERFViIsIk5leHRFcnJvckNvbXBvbmVudCIsInN0YXR1c0NvZGUiLCJnZXRJbml0aWFsUHJvcHMiLCJjb250ZXh0RGF0YSIsIlNlbnRyeSIsImNhcHR1cmVVbmRlcnNjb3JlRXJyb3JFeGNlcHRpb24iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_error.js\n");
 
 /***/ }),
 
-/***/ 3121:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ "./sentry.server.config.js":
+/*!*********************************!*\
+  !*** ./sentry.server.config.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-
-"use client";
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-exports.defaultHead = defaultHead;
-exports["default"] = void 0;
-var _extends = (__webpack_require__(6495)/* ["default"] */ .Z);
-var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
-var _interop_require_wildcard = (__webpack_require__(1598)/* ["default"] */ .Z);
-var _react = _interop_require_wildcard(__webpack_require__(6689));
-var _sideEffect = _interop_require_default(__webpack_require__(2470));
-var _ampContext = __webpack_require__(3918);
-var _headManagerContext = __webpack_require__(2796);
-var _ampMode = __webpack_require__(5732);
-var _warnOnce = __webpack_require__(618);
-function defaultHead(inAmpMode = false) {
-    const head = [
-        /*#__PURE__*/ _react.default.createElement("meta", {
-            charSet: "utf-8"
-        })
-    ];
-    if (!inAmpMode) {
-        head.push(/*#__PURE__*/ _react.default.createElement("meta", {
-            name: "viewport",
-            content: "width=device-width"
-        }));
-    }
-    return head;
-}
-function onlyReactElement(list, child) {
-    // React children can be "string" or "number" in this case we ignore them for backwards compat
-    if (typeof child === "string" || typeof child === "number") {
-        return list;
-    }
-    // Adds support for React.Fragment
-    if (child.type === _react.default.Fragment) {
-        return list.concat(_react.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild)=>{
-            if (typeof fragmentChild === "string" || typeof fragmentChild === "number") {
-                return fragmentList;
-            }
-            return fragmentList.concat(fragmentChild);
-        }, []));
-    }
-    return list.concat(child);
-}
-const METATYPES = [
-    "name",
-    "httpEquiv",
-    "charSet",
-    "itemProp"
-];
-/*
- returns a function for filtering head child elements
- which shouldn't be duplicated, like <title/>
- Also adds support for deduplicated `key` properties
-*/ function unique() {
-    const keys = new Set();
-    const tags = new Set();
-    const metaTypes = new Set();
-    const metaCategories = {};
-    return (h)=>{
-        let isUnique = true;
-        let hasKey = false;
-        if (h.key && typeof h.key !== "number" && h.key.indexOf("$") > 0) {
-            hasKey = true;
-            const key = h.key.slice(h.key.indexOf("$") + 1);
-            if (keys.has(key)) {
-                isUnique = false;
-            } else {
-                keys.add(key);
-            }
-        }
-        // eslint-disable-next-line default-case
-        switch(h.type){
-            case "title":
-            case "base":
-                if (tags.has(h.type)) {
-                    isUnique = false;
-                } else {
-                    tags.add(h.type);
-                }
-                break;
-            case "meta":
-                for(let i = 0, len = METATYPES.length; i < len; i++){
-                    const metatype = METATYPES[i];
-                    if (!h.props.hasOwnProperty(metatype)) continue;
-                    if (metatype === "charSet") {
-                        if (metaTypes.has(metatype)) {
-                            isUnique = false;
-                        } else {
-                            metaTypes.add(metatype);
-                        }
-                    } else {
-                        const category = h.props[metatype];
-                        const categories = metaCategories[metatype] || new Set();
-                        if ((metatype !== "name" || !hasKey) && categories.has(category)) {
-                            isUnique = false;
-                        } else {
-                            categories.add(category);
-                            metaCategories[metatype] = categories;
-                        }
-                    }
-                }
-                break;
-        }
-        return isUnique;
-    };
-}
-/**
- *
- * @param headChildrenElements List of children of <Head>
- */ function reduceComponents(headChildrenElements, props) {
-    const { inAmpMode  } = props;
-    return headChildrenElements.reduce(onlyReactElement, []).reverse().concat(defaultHead(inAmpMode).reverse()).filter(unique()).reverse().map((c, i)=>{
-        const key = c.key || i;
-        if ( true && !inAmpMode) {
-            if (c.type === "link" && c.props["href"] && // TODO(prateekbh@): Replace this with const from `constants` when the tree shaking works.
-            [
-                "https://fonts.googleapis.com/css",
-                "https://use.typekit.net/"
-            ].some((url)=>c.props["href"].startsWith(url))) {
-                const newProps = _extends({}, c.props || {});
-                newProps["data-href"] = newProps["href"];
-                newProps["href"] = undefined;
-                // Add this attribute to make it easy to identify optimized tags
-                newProps["data-optimized-fonts"] = true;
-                return /*#__PURE__*/ _react.default.cloneElement(c, newProps);
-            }
-        }
-        if (false) {}
-        return /*#__PURE__*/ _react.default.cloneElement(c, {
-            key
-        });
-    });
-}
-/**
- * This component injects elements to `<head>` of your page.
- * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
- */ function Head({ children  }) {
-    const ampState = (0, _react).useContext(_ampContext.AmpStateContext);
-    const headManager = (0, _react).useContext(_headManagerContext.HeadManagerContext);
-    return /*#__PURE__*/ _react.default.createElement(_sideEffect.default, {
-        reduceComponentsToState: reduceComponents,
-        headManager: headManager,
-        inAmpMode: (0, _ampMode).isInAmpMode(ampState)
-    }, children);
-}
-var _default = Head;
-exports["default"] = _default;
-if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
-    Object.defineProperty(exports.default, "__esModule", {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=head.js.map
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sentry/nextjs */ \"@sentry/nextjs\");\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__);\nvar _sentryCollisionFreeGlobalObject = \"undefined\" === \"undefined\" ? global : window;\n_sentryCollisionFreeGlobalObject[\"__sentryRewritesTunnelPath__\"] = undefined;\n_sentryCollisionFreeGlobalObject[\"SENTRY_RELEASE\"] = {\n    \"id\": \"development\"\n};\n_sentryCollisionFreeGlobalObject[\"__rewriteFramesDistDir__\"] = \".next\";\n// This file configures the initialization of Sentry on the server.\n// The config you add here will be used whenever the server handles a request.\n// https://docs.sentry.io/platforms/javascript/guides/nextjs/\n\nconst SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN;\n_sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__.init({\n    dsn: SENTRY_DSN || \"https://7376f4b5e18348bfb1f10a362751df61@o4504595307757568.ingest.sentry.io/4504595350814720\",\n    // Adjust this value in production, or use tracesSampler for greater control\n    tracesSampleRate: 1.0\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zZW50cnkuc2VydmVyLmNvbmZpZy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQSxJQUFJQSxtQ0FBbUMsZ0JBQWtCLGNBQWNDLFNBQVNDLE1BQU07QUFDdEZGLGdDQUFnQyxDQUFDLCtCQUErQixHQUFHRztBQUNuRUgsZ0NBQWdDLENBQUMsaUJBQWlCLEdBQUc7SUFBQyxNQUFLO0FBQWE7QUFDeEVBLGdDQUFnQyxDQUFDLDJCQUEyQixHQUFHO0FBRS9ELG1FQUFtRTtBQUNuRSw4RUFBOEU7QUFDOUUsNkRBQTZEO0FBRXBCO0FBRXpDLE1BQU1LLGFBQWFDLFFBQVFDLEdBQUcsQ0FBQ0YsVUFBVSxJQUFJQyxRQUFRQyxHQUFHLENBQUNDLHNCQUFzQjtBQUUvRUosZ0RBQVcsQ0FBQztJQUNWTSxLQUFLTCxjQUFjO0lBQ25CLDRFQUE0RTtJQUM1RU0sa0JBQWtCO0FBS3BCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcGFuZGVtaWNvLy4vc2VudHJ5LnNlcnZlci5jb25maWcuanM/NzYzMCJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgX3NlbnRyeUNvbGxpc2lvbkZyZWVHbG9iYWxPYmplY3QgPSB0eXBlb2Ygd2luZG93ID09PSBcInVuZGVmaW5lZFwiID8gZ2xvYmFsIDogd2luZG93O1xuX3NlbnRyeUNvbGxpc2lvbkZyZWVHbG9iYWxPYmplY3RbXCJfX3NlbnRyeVJld3JpdGVzVHVubmVsUGF0aF9fXCJdID0gdW5kZWZpbmVkO1xuX3NlbnRyeUNvbGxpc2lvbkZyZWVHbG9iYWxPYmplY3RbXCJTRU5UUllfUkVMRUFTRVwiXSA9IHtcImlkXCI6XCJkZXZlbG9wbWVudFwifTtcbl9zZW50cnlDb2xsaXNpb25GcmVlR2xvYmFsT2JqZWN0W1wiX19yZXdyaXRlRnJhbWVzRGlzdERpcl9fXCJdID0gXCIubmV4dFwiO1xuXG4vLyBUaGlzIGZpbGUgY29uZmlndXJlcyB0aGUgaW5pdGlhbGl6YXRpb24gb2YgU2VudHJ5IG9uIHRoZSBzZXJ2ZXIuXG4vLyBUaGUgY29uZmlnIHlvdSBhZGQgaGVyZSB3aWxsIGJlIHVzZWQgd2hlbmV2ZXIgdGhlIHNlcnZlciBoYW5kbGVzIGEgcmVxdWVzdC5cbi8vIGh0dHBzOi8vZG9jcy5zZW50cnkuaW8vcGxhdGZvcm1zL2phdmFzY3JpcHQvZ3VpZGVzL25leHRqcy9cblxuaW1wb3J0ICogYXMgU2VudHJ5IGZyb20gJ0BzZW50cnkvbmV4dGpzJztcblxuY29uc3QgU0VOVFJZX0RTTiA9IHByb2Nlc3MuZW52LlNFTlRSWV9EU04gfHwgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU0VOVFJZX0RTTjtcblxuU2VudHJ5LmluaXQoe1xuICBkc246IFNFTlRSWV9EU04gfHwgJ2h0dHBzOi8vNzM3NmY0YjVlMTgzNDhiZmIxZjEwYTM2Mjc1MWRmNjFAbzQ1MDQ1OTUzMDc3NTc1NjguaW5nZXN0LnNlbnRyeS5pby80NTA0NTk1MzUwODE0NzIwJyxcbiAgLy8gQWRqdXN0IHRoaXMgdmFsdWUgaW4gcHJvZHVjdGlvbiwgb3IgdXNlIHRyYWNlc1NhbXBsZXIgZm9yIGdyZWF0ZXIgY29udHJvbFxuICB0cmFjZXNTYW1wbGVSYXRlOiAxLjAsXG4gIC8vIC4uLlxuICAvLyBOb3RlOiBpZiB5b3Ugd2FudCB0byBvdmVycmlkZSB0aGUgYXV0b21hdGljIHJlbGVhc2UgdmFsdWUsIGRvIG5vdCBzZXQgYVxuICAvLyBgcmVsZWFzZWAgdmFsdWUgaGVyZSAtIHVzZSB0aGUgZW52aXJvbm1lbnQgdmFyaWFibGUgYFNFTlRSWV9SRUxFQVNFYCwgc29cbiAgLy8gdGhhdCBpdCB3aWxsIGFsc28gZ2V0IGF0dGFjaGVkIHRvIHlvdXIgc291cmNlIG1hcHNcbn0pO1xuIl0sIm5hbWVzIjpbIl9zZW50cnlDb2xsaXNpb25GcmVlR2xvYmFsT2JqZWN0IiwiZ2xvYmFsIiwid2luZG93IiwidW5kZWZpbmVkIiwiU2VudHJ5IiwiU0VOVFJZX0RTTiIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19TRU5UUllfRFNOIiwiaW5pdCIsImRzbiIsInRyYWNlc1NhbXBsZVJhdGUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./sentry.server.config.js\n");
 
 /***/ }),
 
-/***/ 3918:
+/***/ "@sentry/nextjs":
+/*!*********************************!*\
+  !*** external "@sentry/nextjs" ***!
+  \*********************************/
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/amp-context.js");
+module.exports = require("@sentry/nextjs");
 
 /***/ }),
 
-/***/ 5732:
+/***/ "next/error":
+/*!*****************************!*\
+  !*** external "next/error" ***!
+  \*****************************/
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/amp-mode.js");
+module.exports = require("next/error");
 
 /***/ }),
 
-/***/ 2796:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/head-manager-context.js");
-
-/***/ }),
-
-/***/ 2470:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/side-effect.js");
-
-/***/ }),
-
-/***/ 618:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
-
-/***/ }),
-
-/***/ 6689:
-/***/ ((module) => {
-
-module.exports = require("react");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -323,7 +70,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [210], () => (__webpack_exec__(7345)));
+var __webpack_exports__ = (__webpack_exec__("./sentry.server.config.js"), __webpack_exec__("./src/pages/_error.js"));
 module.exports = __webpack_exports__;
 
 })();
