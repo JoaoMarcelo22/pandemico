@@ -1,10 +1,11 @@
 import { Divider, List, ListItem, ListItemText, useMediaQuery } from "@mui/material"
 import Link from "next/link"
 import React, { useState } from "react"
+import ButtonHamburger from "../ButtonHamburger";
 import Button from "../ButtonNav";
+import NavModal from "../Modais/NavModal";
 import * as S from "./styles"
 
-//const [open,SetOpen] = useState(true)
 
 const navigationLinks = [
     { name: "Início", href: "/" },
@@ -20,9 +21,14 @@ const navigationIcons = [
 
 export default function Nav2() {
     const dowm = useMediaQuery('(min-width:1000px)');
-    const up = useMediaQuery('(max-width:1000px),(margin:0px)');
+    const up = useMediaQuery('(max-width:1000px)');
 
+    const [open, isOpen] = useState(false);
 
+    const openModal = () => {
+        isOpen(!open);
+        console.log(open)
+    }
     return (
         <S.Container>
             <S.ContainerStart>
@@ -40,36 +46,13 @@ export default function Nav2() {
                         {dowm && <S.LoginImg src={item.src} />}
                     </>
                 ))}
-                {up && <S.LoginImg src="/assets/menu-hamburger.png" />}
+                {up && <S.Container2>
+                    <S.Button>
+                        <S.Imagem src="/assets/menu-hamburger.png" alt="Imagem menu" onClick={openModal} />
+                    </S.Button>
+                </S.Container2>}
             </S.ContainerEnd>
-            {dowm &&<List component="button" aria-label="mailbox folders">
-                <ListItem >
-                    <S.LoginImg src="/assets/login2.png" />
-                    <ListItemText primary="Login" />
-                </ListItem>
-                <ListItem divider>
-                    <S.LoginImg src="/assets/lupa.png" />
-                    <ListItemText primary="Busca" />
-                </ListItem>
-                <ListItem >
-                    <ListItemText primary="Início" />
-                </ListItem>
-                <Divider />
-                <ListItem divider>
-                    <ListItemText primary="Séries" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Filmes" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Animes" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Criar Post" />
-                </ListItem>
-            </List>}
+            <NavModal isOpen={open} />
         </S.Container>
-
-
     )
 }

@@ -7,11 +7,10 @@ interface ButtonComponentProps extends ButtonProps{
 }
 const Button: React.FC<ButtonComponentProps>=({
     label,
-    ...rest
 }) => {
     return(
         <S.Container>
-            <S.Titulo href="#">{label}</S.Titulo>
+            <S.Titulo>{label}</S.Titulo>
         </S.Container>
     );
 };

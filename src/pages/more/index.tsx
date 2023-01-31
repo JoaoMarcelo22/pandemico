@@ -12,6 +12,7 @@ export default function More() {
             <link rel="icon" href="assets/pandemic.png" />
         </Head>
         <Nav2 />
+        
         <Footer />
     </>
     )
