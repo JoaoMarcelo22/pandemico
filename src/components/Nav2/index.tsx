@@ -21,7 +21,6 @@ const navigationIcons = [
 
 export default function Nav2() {
     const dowm = useMediaQuery('(min-width:1000px)');
-    const up = useMediaQuery('(max-width:1000px)');
 
     const [open, isOpen] = useState(false);
 
@@ -46,11 +45,11 @@ export default function Nav2() {
                         {dowm && <S.LoginImg src={item.src} />}
                     </>
                 ))}
-                {up && <S.Container2>
-                    <S.Button>
+                <S.Container2>
+                  {open===false &&<S.Button>
                         <S.Imagem src="/assets/menu-hamburger.png" alt="Imagem menu" onClick={openModal} />
-                    </S.Button>
-                </S.Container2>}
+                    </S.Button>}
+                </S.Container2>
             </S.ContainerEnd>
             <NavModal isOpen={open} />
         </S.Container>

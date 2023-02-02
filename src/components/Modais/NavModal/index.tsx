@@ -1,46 +1,47 @@
 import * as S from "./styles"
-import { Divider, List, ListItem, ListItemText } from "@mui/material";
+import { Button, Divider, List, ListItem, ListItemText } from "@mui/material";
 import React from "react"
+import Link from "next/link";
 
 interface NavModalComponentProps {
     isOpen:boolean;
-
 }
 const NavModal: React.FC<NavModalComponentProps> = ({
     isOpen,
 }) => {
-
+    const navigationLinks = [
+        { name: "Início", href: "/" },
+        { name: "Séries", href: "/series" },
+        { name: "Filmes", href: "/movies" },
+        { name: "Animes", href: "/animes" },
+        { name: "Saiba +", href: "/more" },
+    ]
+    const navigationLinksNav = [
+        { name: "Início", href: "#", src:"/assets/login2.png"},
+        { name: "Séries", href: "#", src:"/assets/lupa.png"},
+    ]
 if(!isOpen) return <>
 </>
 return (
-        <>
+        <S.Container>
             <List component="button" aria-label="mailbox folders">
-                <ListItem >
-                    <S.LoginImg src="/assets/login2.png" />
-                    <ListItemText primary="Login" />
-                </ListItem>
-                <ListItem divider>
-                    <S.LoginImg src="/assets/lupa.png" />
-                    <ListItemText primary="Busca" />
-                </ListItem>
-                <ListItem >
-                    <ListItemText primary="Início" />
-                </ListItem>
-                <Divider />
-                <ListItem divider>
-                    <ListItemText primary="Séries" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Filmes" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Animes" />
-                </ListItem>
-                <ListItem divider>
-                    <ListItemText primary="Criar Post" />
-                </ListItem>
+                {navigationLinksNav.map((item) => (
+                    <Link href={item.href}>
+                        <ListItem >
+                            <S.LoginImg src={item.src}/>
+                            <ListItemText primary={item.name} />
+                        </ListItem>
+                    </Link>
+                ))}
+                {navigationLinks.map((item) => (
+                    <Link href={item.href}>
+                        <ListItem >
+                        <ListItemText primary={item.name} />
+                        </ListItem>
+                    </Link>
+                ))}
             </List>
-        </>
+        </S.Container>
     );
 };
 export default NavModal;

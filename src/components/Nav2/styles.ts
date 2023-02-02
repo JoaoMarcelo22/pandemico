@@ -19,14 +19,14 @@ background-color: rgba(0, 0, 0, 0.329);
 
 export const ContainerStart = styled.div`
 display: flex;
-aling-items: center;
+align-items: center;
 
 margin:auto 5px auto 20px;
 `
 
 export const ContainerEnd = styled.div`
 display: flex;
-aling-items: center;
+align-items: center;
 
 margin:auto 5px auto auto;
 
@@ -39,7 +39,7 @@ export const Titulo =styled.p`
 ${GlobalFont}
 min-width: 20px;
 
-text-aling:center;
+text-align:center;
 
 margin: auto 20px auto auto;
 
@@ -68,6 +68,10 @@ flex-direction: row;
 
 margin: auto 2px;
 padding: 1px;
+
+@media only screen and (min-width: 1000px) {
+    display: none;
+}
 
 `
 export const Button = styled.button`
