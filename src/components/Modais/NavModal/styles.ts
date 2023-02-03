@@ -10,6 +10,9 @@ height: 30px;
 }`
 
 export const Container =styled.div`
+position: absolute;
+top: -12px;
+right: 45px;
 background-color: black;
 
 width: 5rem;

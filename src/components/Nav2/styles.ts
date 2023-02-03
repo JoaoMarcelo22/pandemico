@@ -74,6 +74,7 @@ margin-right: 35px;
 
 `
 export const Container2 = styled.div`
+position: relative;
 display: flex;
 flex-direction: row;
 
@@ -86,7 +87,8 @@ padding: 1px;
 
 `
 export const Button = styled.button`
-background-color: transparent;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
 `
@@ -94,4 +96,7 @@ background-color: transparent;
 export const Imagem = styled.img`
   width: 50px;
   height: 50px;
+`
+export const opa = styled.div`
+    position: relative;
 `

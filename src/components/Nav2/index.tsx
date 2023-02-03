@@ -40,12 +40,12 @@ export default function Nav2() {
                             <Button label={item.name} />
                     </Link>
                 ))}
-                <div>
+                <S.opa>
                     <S.Button onClick={openModal2}>
                         <Button label="Saiba +"/>
                     </S.Button>
                 <ButtonModal isOpen2={open2} />
-                </div>
+                </S.opa>
                 </S.ContainerMenu>
             </S.ContainerStart>
             <S.ContainerEnd>
@@ -58,9 +58,9 @@ export default function Nav2() {
                   {open===false &&<S.Button>
                         <S.Imagem src="/assets/menu-hamburger.png" alt="Imagem menu" onClick={openModal} />
                     </S.Button>}
+                    <NavModal isOpen={open} />
                 </S.Container2>
             </S.ContainerEnd>
-            <NavModal isOpen={open} />
         </S.Container>
     )
 }
