@@ -3,5 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/more": "pages/more.js",
+  "/movies": "pages/movies.js",
+  "/animes": "pages/animes.js",
+  "/series": "pages/series.js",
   "/": "pages/index.js"
 }

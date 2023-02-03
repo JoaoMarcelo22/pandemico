@@ -34,6 +34,17 @@ margin:auto 5px auto auto;
     margin-top: 24px;
 }
 `
+export const ContainerMenu = styled.div`
+display: flex;
+align-items: center;
+
+margin:auto 5px auto 20px;
+
+@media only screen and (max-width: 1000px) {
+    display: none;
+}
+
+`
 
 export const Titulo =styled.p`
 ${GlobalFont}
