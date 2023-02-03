@@ -16,7 +16,7 @@ export default function Footer() {
                     <S.Text>Acesse as nossas redes sociais:</S.Text>
                     <S.List>
                         <S.Li>
-                                <S.RedeSocial href="https://twitter.com/" target="_blank">
+                                <S.RedeSocial href="https://twitter.com/Quarenten4" target="_blank">
                             <S.ContainerSocial>
                                     <S.Text>Twitter</S.Text>
                                     <S.Icone src="assets/twitter.svg" />
@@ -28,7 +28,7 @@ export default function Footer() {
                                     <S.Icone src="assets/instagram.svg" />
                             </S.ContainerSocial>
                                 </S.RedeSocial>
-                                <S.RedeSocial href="https://pt-br.facebook.com/" target="_blank">
+                                <S.RedeSocial href="https://www.facebook.com/profile.php?id=100089966322427" target="_blank">
                             <S.ContainerSocial>
                                     <S.Text>facebook</S.Text>
                                     <S.Icone src="assets/facebook.svg" />
