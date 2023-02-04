@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React from 'react'
-import Nav from '../../components/Nav'
+import Nav from '../../components/Nav3'
 import * as S from './styles'
 
 export default function Home() {
