@@ -13,8 +13,7 @@ const NavModal: React.FC<NavModalComponentProps> = ({
         { name: "Início", href: "/" },
         { name: "Séries", href: "/series" },
         { name: "Filmes", href: "/movies" },
-        { name: "Animes", href: "/animes" },
-        { name: "Saiba +", href: "/more" },
+        { name: "Animes", href: "/animes" }
     ]
     const navigationLinksNav = [
         { name: "Início", href: "#", src:"/assets/login2.png"},
