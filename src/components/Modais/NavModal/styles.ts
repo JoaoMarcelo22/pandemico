@@ -17,6 +17,7 @@ background-color: black;
 
 width: 5rem;
 
+z-index: 7;
 .MuiList-root{
     width: 120px;
     padding: 0px;

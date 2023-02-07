@@ -87,7 +87,7 @@ padding: 1px;
 
 `
 export const Button = styled.button`
-
+    z-index: 7;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -99,4 +99,13 @@ export const Imagem = styled.img`
 `
 export const opa = styled.div`
     position: relative;
+`
+export const Overlay = styled.div`
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: auto;
 `

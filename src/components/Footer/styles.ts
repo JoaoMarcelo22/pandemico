@@ -22,6 +22,9 @@ display: flex;
 align-content: center;
 align-items: center;
 
+text-align :center;
+padding: 0px 30px;
+
 @media only screen and (min-width: 1000px) {
     margin: auto 20px;
 }
@@ -33,10 +36,12 @@ display: flex;
 `
 export const ContainerText = styled.div`
 display:flex;
+
+margin:auto;
+
 `
 export const Text = styled.p`
 display: inline-block;
-text-aling:center;
 
 margin:auto;
 margin-left:12px;
@@ -60,7 +65,7 @@ list-style-type: none;
 `
 
 export const Icone = styled.img`
-widht:30px;
+width:30px;
 height:30px;
 
 margin-left:10px;
