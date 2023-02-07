@@ -30,22 +30,27 @@ export default function Nav() {
     const openModal2 = () => {
         isOpen2(!open2);
     }
+    const close = () =>{
+        isOpen(open === false);
+        isOpen2(open2 === false);
+        console.log(isOpen);
+    }
     return (
         <S.Container>
             <S.ContainerStart>
                 <S.Titulo>Pandêmico</S.Titulo>
                 <S.ContainerMenu>
-                {navigationLinks.map((item) => (
-                    <Link href={item.href}>
+                    {navigationLinks.map((item) => (
+                        <Link href={item.href}>
                             <Button label={item.name} />
-                    </Link>
-                ))}
-                <S.opa>
-                    <S.Button onClick={openModal2}>
-                        <Button label="Saiba +"/>
-                    </S.Button>
-                <ButtonModal isOpen2={open2} />
-                </S.opa>
+                        </Link>
+                    ))}
+                    <S.opa>
+                        <S.Button onClick={openModal2}>
+                            <Button label="Saiba +" />
+                        </S.Button>
+                        <ButtonModal isOpen2={open2} />
+                    </S.opa>
                 </S.ContainerMenu>
             </S.ContainerStart>
             <S.ContainerEnd>
@@ -55,11 +60,12 @@ export default function Nav() {
                     </>
                 ))}
                 <S.Container2>
-                  {open===false &&<S.Button>
+                    {open === false && <S.Button>
                         <S.Imagem src="/assets/menu-hamburger.png" alt="Imagem menu" onClick={openModal} />
                     </S.Button>}
-                    <NavModal isOpen={open} />
+                    {open === true && <NavModal isOpen={open} />}
                 </S.Container2>
+                {open === true && <S.Overlay onClick={close}/>}
             </S.ContainerEnd>
         </S.Container>
     )
