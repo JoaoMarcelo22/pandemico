@@ -6,10 +6,8 @@ export default function Footer() {
     return (
         <S.Container>
             <S.ContainerSecundary>
-                <S.Text>Pagina para apaixonados e amantes da cultura Zumbi,
-                    temos conteudos que abramgem diversos temas, virus, bacterias
-                    e deferentes tipos de catastrofe, Salve-Se!<br /><br />
-                    © Copyright Todos os direitos reservados a Jubileu 2023</S.Text>
+                <S.Text>Página para apaixonados e amantes da cultura Zumbi. Temos conteúdos que abrangem diversos temas, como vírus, bactérias, fungos e diferentes tipos de fim do mundo. Salve-se! <br /><br />
+                © Copyright Todos os direitos reservados a Jubileu 2023.</S.Text>
             </S.ContainerSecundary>
             <S.ContainerSecundary>
                 <S.ContainerText>
